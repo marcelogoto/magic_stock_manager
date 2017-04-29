@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.marcelo.gt.magicstockmanager.MyCollectionActivity"
+    tools:showIn="@layout/app_bar_my_collection">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:src="@mipmap/no_cards_placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/no_cards"
+        app:layout_constraintLeft_toLeftOf="@+id/no_cards"
+        app:layout_constraintRight_toRightOf="@+id/no_cards"
+        app:layout_constraintTop_toTopOf="@+id/no_cards"
+        android:layout_marginBottom="140dp"/>
+
+    <TextView
+        android:id="@+id/no_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No cards in your collection!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start_adding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start adding cards"
+        android:background="@drawable/round_button"
+        android:padding="5dp"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/no_cards"
+        app:layout_constraintLeft_toLeftOf="@+id/no_cards"
+        app:layout_constraintRight_toRightOf="@+id/no_cards"
+        app:layout_constraintTop_toTopOf="@+id/no_cards"
+        android:layout_marginTop="100dp"/>
+
+</android.support.constraint.ConstraintLayout>
