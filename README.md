@@ -1,2 +1,3 @@
-# magic_stock_manager
-Magic Stock Manager
+# Magic Stock Manager
+
+Personal project in progress
